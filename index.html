@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상 안경 피팅</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>가상 안경 피팅</h1>
+    
+    <!-- 카테고리 선택 버튼들 -->
+    <div id="category-selection">
+      <button id="glasses-btn">안경</button>
+      <button id="sunglasses-btn">썬글라스</button>
+    </div>
+
+    <!-- 디자인 선택 버튼들이 들어갈 곳 -->
+    <div id="design-selection" class="hidden">
+      <!-- 디자인 선택 후 이곳에 이미지 버튼들이 나타나게 됩니다. -->
+    </div>
+
+    <!-- 웹캠 화면 -->
+    <div id="webcam-container" class="hidden">
+      <!-- 웹캠 화면 -->
+    </div>
+
+    <!-- 안경 오버레이 화면 -->
+    <div id="overlay" class="hidden">
+      <!-- 선택된 안경 이미지가 오버레이로 들어갈 부분 -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
