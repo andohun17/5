@@ -2,12 +2,12 @@
 document.addEventListener("DOMContentLoaded", function() {
   // 디자인 목록
   const glasses = [
-    { name: "Classic Glasses", src: "assets/glasses/classic.png" },
-    { name: "Round Glasses", src: "assets/glasses/round.png" }
+    { name: "Classic Glasses", src: "/assets/glasses/classic.png" },
+    { name: "Round Glasses", src: "/assets/glasses/round.png" }
   ];
   const sunglasses = [
-    { name: "Aviator", src: "assets/sunglasses/aviator.png" },
-    { name: "Retro", src: "assets/sunglasses/retro.png" }
+    { name: "Comic", src: "/assets/sunglasses/comic.png" },
+    { name: "Retro", src: "/assets/sunglasses/retro.png" }
   ];
 
   let selectedCategory = null;
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     designs.forEach(item => {
       const img = document.createElement("img");
-      img.src = item.src;  // 이미지 경로
+      img.src = item.src;  // 절대 경로 사용 (배포 후에도 올바르게 이미지가 보이도록)
       img.alt = item.name; // 이미지 이름
       img.addEventListener("click", function() {
         selectedDesign = item;  // 선택한 디자인 저장
